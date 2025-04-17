@@ -37,7 +37,7 @@ jobs:
           file: ./src/Dockerfile
           push: true
           tags: |
-            jpmoura5/aula-conversao-temperatura-node-v22.14.0:latest
+            jpmoura5/aula-conversao-temperatura-node-v22.14.0:${{ github.run_number }}
   CD:
     runs-on: ubuntu-latest
     needs: [CI]
